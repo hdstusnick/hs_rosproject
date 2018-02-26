@@ -1,1 +1,3 @@
 # hs_rosproject
+
+Currently running into errors with calling the service and when the service is called. But I have the skeleton of the project done. Which is 4 nodes ActionServer, MainNode, ConsoleNode, and FakeNLP. Console node is done and after a user types something in the console, it publishes that string to demo/command. FakeNLP is a service that when called returns a float which is the number at the end of any string it is passed. MainNode calles the FakeNLP service and uses it to get the number at the end of the string it gets from listening to the demo/command topic so it can call ActionServer to make the robot turn. 
